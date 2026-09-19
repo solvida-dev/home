@@ -11,12 +11,7 @@
             color-scheme: light dark;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family:
                 -apple-system,
                 BlinkMacSystemFont,
@@ -26,155 +21,142 @@
                 Arial,
                 sans-serif;
 
-            background: linear-gradient(135deg, #1267f1, #22c7dc);
-            color: white;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 80px 24px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 60px 0 40px;
+            padding: 48px 24px;
+            line-height: 1.7;
         }
 
         h1 {
-            font-size: clamp(2.8rem, 8vw, 5rem);
-            margin: 0;
-            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        h2 {
+            margin-top: 2.5rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #8884;
+        }
+
+        h3 {
+            margin-top: 1.75rem;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
         }
 
         .subtitle {
-            font-size: 1.4rem;
-            margin-top: 18px;
-            opacity: 0.9;
+            opacity: 0.75;
+            margin-bottom: 2rem;
         }
 
-        .description {
-            max-width: 700px;
-            margin: 32px auto 0;
-            font-size: 1.1rem;
-            line-height: 1.7;
-            opacity: 0.95;
-        }
-
-        .card {
-            margin: 50px auto 0;
-            max-width: 760px;
-            padding: 32px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(10px);
-        }
-
-        .card h2 {
-            margin-top: 0;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
-        }
-
-        .feature {
-            padding: 20px;
-            border-radius: 14px;
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .links {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
+        .notice {
+            padding: 16px 18px;
+            border-left: 4px solid currentColor;
+            background: #8881;
+            margin: 24px 0;
         }
 
         .button {
             display: inline-block;
-            padding: 12px 20px;
-            border-radius: 10px;
-            background: white;
-            color: #1267f1;
+            margin-top: 12px;
+            padding: 10px 16px;
+            border: 1px solid #8885;
+            border-radius: 8px;
             text-decoration: none;
+            color: inherit;
             font-weight: 600;
         }
 
+        .button:hover {
+            background: #8881;
+        }
+
         footer {
-            text-align: center;
-            margin-top: 70px;
-            opacity: 0.75;
-            font-size: 0.95rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #8884;
+            opacity: 0.8;
         }
     </style>
 </head>
 
 <body>
-    <main class="container">
 
-        <section class="hero">
-            <h1>Share Anything</h1>
+    <h1>Share Anything</h1>
 
-            <p class="subtitle">
-                Browse and share media with ease.
-            </p>
+    <p class="subtitle">
+        Browse and share media with ease.
+    </p>
 
-            <p class="description">
-                Share Anything is an Android utility designed to help you browse
-                supported media on your device, inspect media from shared links,
-                and quickly share selected content with other apps.
-            </p>
-        </section>
+    <p>
+        Share Anything is an Android utility designed to help you browse supported
+        media on your device, inspect media associated with shared links, and share
+        selected content with other applications.
+    </p>
 
-        <section class="card">
-            <h2>What Share Anything Does</h2>
+    <div class="notice">
+        <strong>Simple by design.</strong>
+        Share Anything is built around local media access, link-based media discovery,
+        and Android's standard sharing features.
+    </div>
 
-            <div class="features">
-                <div class="feature">
-                    <strong>Browse Media</strong>
-                    <p>
-                        View supported photos, videos, audio files, and other
-                        media available on your device.
-                    </p>
-                </div>
+    <h2>What Share Anything Does</h2>
 
-                <div class="feature">
-                    <strong>Process Shared Links</strong>
-                    <p>
-                        Share supported web links with the app and review media
-                        resources associated with those pages.
-                    </p>
-                </div>
+    <h3>Browse Media</h3>
 
-                <div class="feature">
-                    <strong>Share Content</strong>
-                    <p>
-                        Select media and send it to compatible apps using
-                        Android's standard sharing features.
-                    </p>
-                </div>
-            </div>
+    <p>
+        View supported photos, videos, audio files, and other media available on
+        your device in a familiar file-style interface.
+    </p>
 
-            <div class="links">
-                <a
-                    class="button"
-                    href="YOUR_PRIVACY_POLICY_URL"
-                >
-                    Privacy Policy
-                </a>
-            </div>
-        </section>
+    <h3>Inspect Shared Links</h3>
 
-        <footer>
+    <p>
+        Share a supported web link with Share Anything and the app can inspect
+        the page for available media resources such as images, video, or audio.
+    </p>
+
+    <h3>Share Content</h3>
+
+    <p>
+        Select the media you want and send it to compatible apps using Android's
+        standard sharing features.
+    </p>
+
+    <h2>Privacy</h2>
+
+    <p>
+        Share Anything is designed to keep local files on your device unless you
+        intentionally choose to share them elsewhere.
+    </p>
+
+    <p>
+        For more details about how the app handles files, links, network requests,
+        and third-party services, review the Privacy Policy.
+    </p>
+
+    <a
+        class="button"
+        href="YOUR_PRIVACY_POLICY_URL"
+    >
+        View Privacy Policy
+    </a>
+
+    <h2>Support</h2>
+
+    <p>
+        If you have questions, feedback, or need help with Share Anything, use the
+        support contact information listed on the Google Play Store.
+    </p>
+
+    <footer>
+        <p>
             © 2026 Share Anything
-        </footer>
+        </p>
+    </footer>
 
-    </main>
 </body>
 </html>
